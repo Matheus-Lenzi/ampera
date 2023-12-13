@@ -8,7 +8,7 @@ if 'test' not in globals():
 @data_loader
 def load_data_from_file(*args, **kwargs):
 
-    filepath = 'ecef.csv'
+    filepath = './data/input/ecef.csv'
     
     dataframe = pd.read_csv(filepath, header=None)
     dataframe = dataframe.rename(columns={

@@ -8,5 +8,5 @@ if 'data_exporter' not in globals():
 def export_data(data, data_2, data_3, *args, **kwargs):
 
     data = pd.concat([data, data_2, data_3], axis=1)
-    filepath = 'output.csv'
+    filepath = './data/output/output.csv'
     data.to_csv(filepath)
