@@ -1,22 +1,43 @@
 # Local
 
+## Virtual Environment
+
+### Create
+
 ```cmd
 python -m venv venv
 ```
+
+### Activate
 
 ```cmd
 ./venv/scripts/activate
 ```
 
+## Requirements
+
+### Install
+
 ```cmd
 pip install -r requirements.txt
 ```
 
-*./ampera/src*
+## Streamlit
+
+### Run
+
+*./ampera/src* -> <http://localhost:8501/>
 
 ```cmd
 streamlit run app.py
 ```
 
-<http://localhost:8501/>
+## Mage
 
+### Install & Run
+
+*./ampera/etl* -> <http://localhost:8501/>
+
+```cmd
+mage start etl
+```
